@@ -1,8 +1,8 @@
-#BitMex-UI
+# BitMex-UI
 
 A graphical UI for BitMex
 
-#Install
+# Install
 
 (tested on Ubuntu 18LTS fresh install)
 
@@ -18,7 +18,7 @@ sudo pip install Pyro4==4.60 bitmex-ws future jsonref jsonrpclib-pelix websocket
 
 sudo pip install -U requests
 
-#Run the script
+# Run the script
 
 git clone cd into MexUI directory and start:
 
@@ -34,7 +34,7 @@ AccName= Optional: Leave this out and it will default to "PublicAcc" else use wh
 
 TAG= Optional: The tag to listen to for the trading terminal
 
-#Run the trade terminal
+# Run the trade terminal
 
 Open a new terminal and run from the same folder:
 
