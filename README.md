@@ -34,6 +34,9 @@ AccName= Optional: Leave this out and it will default to "PublicAcc" else use wh
 
 TAG= Optional: The tag to listen to for the trading terminal
 
+# example 
+python MexBot.py API_KEY=O8hbNQfSwK79XbxmZw4x4s6V API_SECRET=ko1qdH3UbtR1Y-zA9-QhfvDk5wWQuW9R3nWjorSrVvtxqP1r  LiveNET=False AccName=Tester TAG=MyTag
+
 # Run the trade terminal
 
 Open a new terminal and run from the same folder:
