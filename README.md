@@ -18,9 +18,12 @@ sudo pip install Pyro4==4.60 bitmex-ws future jsonref jsonrpclib-pelix websocket
 
 sudo pip install -U requests
 
+git clone https://github.com/John-NN/MexUI.git
+
+
 # Run the script
 
-git clone cd into MexUI directory and start:
+cd into MexUI directory and start:
 
 python MexBot API_KEY=<YOUR_API_KEY> API_SECRET=<YOUR_API_KEY_SECRET> LiveNET=True AccName=<NAME_OF_ACCOUNT> TAG=<TRADETERM_TAG>
 
