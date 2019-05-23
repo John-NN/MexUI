@@ -24,9 +24,11 @@ git clone https://github.com/John-NN/MexUI.git
 # Run the script
 
 cd into MexUI directory and start:
+
 cd MexUI
 
 start the script :
+
 python MexBot API_KEY=<YOUR_API_KEY> API_SECRET=<YOUR_API_KEY_SECRET> LiveNET=True AccName=<NAME_OF_ACCOUNT> TAG=<TRADETERM_TAG>
 
 API_KEY= Use your API key. No space, no quotes
