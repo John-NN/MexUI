@@ -10,7 +10,7 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
-sudo apt-get install -y gcc g++ make libncurses5-dev libreadline6-dev libssl-dev libgdbm-dev libc6-dev libsqlite3-dev libbz2-dev xz-utils patch wget tar curl bzip2 zlib1g-dev python-bsddb3
+sudo apt-get install -y gcc g++ make libncurses5-dev libreadline6-dev libssl-dev libgdbm-dev libc6-dev libsqlite3-dev libbz2-dev xz-utils patch wget tar curl bzip2 zlib1g-dev python-bsddb3 git
 
 sudo apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev python-dev python-pip python-dev build-essential python-wxtools
 
