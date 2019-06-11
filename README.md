@@ -2,6 +2,67 @@
 
 A graphical UI for BitMex
 
+# What it is. 
+
+This is a trading script for Bitmex API with a very easy to use GUI. 
+I have been using this script(s) to manage any number of accounts via API even when bitmex has System overload errors. 
+
+Some explainations: 
+
+Starting the GUI:
+
+For safety reasons, at startup, the trading terminal has no buttons. First you have to select the instrument from the INSTRUMENT
+tab and after that you have to choose the type of trade: Buy/Long or Sell/Short.
+The instrument Tab is updated automatically and so is the last price for ease of use. 
+
+Position on Balance Ratio = Position Size / Wallet Balance
+
+PoB is used instead of contracts because the managed accounts do not have the same amount of bitcoin in balance so 4000 contracts on one account could be 10% of the balance’s value and on a different account could be 200% of it’s value so instead of contracts we use the ratio between the position size and the wallet balance. This way we ensure that all gains and losses weigh the same on all the accounts.This is also a very good way to keep a linear money management.
+
+A trade with PoB = 0.1 has the position size equal to 10% of the wallet’s balance value.
+
+Example:
+– A has 10 BTC
+– B has 1 BTC
+– C has 0.1 BTC
+
+We want to open a long with PoB = 1 and 1 BTC = 4000$ (at the time of opening the position), this means that every account will have a position size equal to it’s wallet’s balance value:
+– A will have 40.000 contracts
+– B will have 4000 contracts
+– C will have 400 contracts
+
+One input, different position sizes but the same PoB.
+The Public version will show contract number updating as the PoB slider is moved.
+
+
+Grids/Limits:
+
+The script can place up to 25 orders in a grid stile in one call - I find this very usefull when volatility is high. 
+The grid call will use it's PoB slider to spread out the wanted money management using the number of orders wanted. 
+
+
+There are several progressions available.
+
+Stops , limits and Take profit orders are self explainatory. One note : Stop Loss are Stop Market orders of 9'999'999 contracts. This is a specific matermark since Mex does not differentiate Stop reduce only and Stop entry orders. A Stop entry order will always have another value that 9'999'999 contracts and can be identified as a Stop entry easily. 
+
+
+Automations : 
+
+For now only the Break even Automation is available in the public script. 
+A B/e Auth of 1% will wait for a price move of at least 1% in profit to place a break even stop loss and , if selected , clean all trade side orders found and/or , if selected , will isolate and force a close to break even liquidation to prevent high slippage in case of sharp market moves. 
+
+What will be added : 
+
+A complete acount percentage risk isolated call to make money management even easier. 
+
+A Dinamic TP automation.
+
+A weighted TP autoamtion.
+
+Social trading posibility linking user terminals over the internet. 
+
+
+
 # Install
 
 (tested on Ubuntu 18LTS fresh install)
