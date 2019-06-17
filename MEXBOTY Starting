@@ -1,0 +1,72 @@
+pyro4-ns --host 194.0.129.201
+
+cd /home/slym/MEXBOT/sample-market-maker
+
+screen -dmS pyro4-ns --host 194.0.129.201
+
+
+cd ~/PycharmProjects/MEXBOT/sample-market-maker
+python CryptoObjects.py 
+
+### Cd into folder 
+
+cd ~/PycharmProjects/MEXBOT/sample-market-maker
+
+### BOt has been upgraded to receive API SECRET and Trady live/test as inputs 
+
+
+
+APIKEY= t3ChlndbKm6EsdhSnbxqhNo3
+APYSECRET= NC6k5IH1U4hwR3-xdXlgcRtiKNrwLhBnDrLAnwmpEdSOWIQQ
+SERVERMODE=True
+
+
+### New version startings 
+Real net tester 
+python MexBot.py API_KEY=9OhdLkaNFdaxUH_BUgNEOsXW API_SECRET=pPgqUkuENbDyrqpRPjj1yN9K5yhHcKUul8-WbXsPSWvYQcxz  LiveNET=True AccName=TesterREALnet TAG=NMC
+
+
+### Testnet starter
+python MexBot.py API_KEY=O9hbNQfSWK79XbfmZwdx4s6V API_SECRET=ok1qdHRUbTR1Y-Az9-QhfvDk5wWQuW9R6nWjorSrVgGZqPqr  LiveNET=False AccName=TesterREALnet TAG=NMC
+
+
+
+python MexBot.py API_KEY=AKkDf1I4AH0r0hUXfuYH03pi API_SECRET=qbdNPK1iEGRkhXkBpOmUCB4qItttqShYfMkXxrw2Zs8txHiW  LiveNET=True AccName=VaultJo TAG=NMC
+
+
+
+
+### TestNet Starter
+python TestReceiver.py "O9hbNQfSWK79XbfmZwdx4s6V" "ok1qdHRUbTR1Y-Az9-QhfvDk5wWQuW9R6nWjorSrVgGZqPqr"  0 TesterAccountJO
+
+### John.N account starter Main account > 30 mXBT
+python TestReceiver.py  "Iw-iEhd9UGAgM4hU_rV4AVl1" "xGCkqvM9r6_EyqmF6I_d08CTNw9jVr13PdP51i36YVkZA4KK" 1 JO_Main_FireFOx
+
+
+
+### Radu D' starter 
+python TestReceiver.py "fEulIBhjNMVLQXf8826PZzvx" "yY1eTsqeUWN4TtWZ5cgow-iD9VkG4l5Jykr8is_qvStgPxWd"  1 R2DU_Tester
+
+
+### Cristina Starter 
+python TestReceiver.py	"liu3joBMLap86xPaDOnJ9dBD" "T9OmTngeFCmeQLgjNMwdjzVOksoG_TpGpxKBmXavIpYUNY0q" 1 Andrei_Cs
+
+### Xum Starter 
+python TestReceiver.py	 "bo6efJGEK-Ojm_k-MeWLwBY5"  "7DAmpBou2uxz7sPZcePNkEaHoRNh8ZExTAD4jCIx3G8AYESE" 1 XUM
+
+### Alex Starter 
+
+python TestReceiver.py	 "1mdMO2QOICXoW0Gd9BdJHmii" "sAvdPkbZIkjO4AIdqdjd-yUeOstUiXOIOu2qs7GKz3J_zMAR" 1 Saong_Alex
+
+### Vlad Starter 
+
+python TestReceiver.py	 "hGMIucKWCC2vLQX9r6XK9M0W"  "0y21VF1sb8_HlYXFZEOKihuN8d0w4ydQZP2COelLWYYGLr0b" 1 Dalv
+
+
+
+### John's Scalper starter
+python TestReceiver.py  "z6qleTXbJTn8xD0U-7jRTIgY" "Bml2C0V7SfPPrsZQDiYVppfV8emu1L1VzKXaqqCGq2eWC-wt" 1 Jo_Master_account
+
+
+
+affiliateID': u'aC6c4V'
